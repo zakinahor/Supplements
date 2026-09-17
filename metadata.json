@@ -1,0 +1,6 @@
+{
+  "name": "PremiumSupps Architecture & Implementation Specification",
+  "description": "Comprehensive reverse-engineering audit, catalog extraction, UX/UI design system, and interactive specification suite for premiumsupps.net",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
