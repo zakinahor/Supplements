@@ -90,3 +90,54 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .pulse-badge {
   animation: pulse-glow 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
 }
+
+/* Modal and Button Utility Classes */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+@media (min-width: 640px) {
+  .modal-overlay {
+    align-items: center;
+  }
+}
+
+.modal-dialog {
+  position: relative;
+  width: 100%;
+}
+
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-accent {
+  background-color: #d0473e;
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background-color: #b53a32;
+}
+
+.btn-accent:active {
+  transform: scale(0.97);
+}
+

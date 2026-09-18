@@ -6,6 +6,7 @@ import { ProductModal } from './components/ProductModal';
 import { CartDrawer } from './components/CartDrawer';
 import { LabTestsModal } from './components/LabTestsModal';
 import { InfoModal } from './components/InfoModal';
+import { AiAdvisorDrawer } from './components/AiAdvisorDrawer';
 import { Product, ProductVariant, PRODUCTS } from './data/catalog';
 import { CartItem, ViewMode, ActiveModal, CategoryFilter } from './types/store';
 
@@ -156,6 +157,9 @@ export default function App() {
         modalType={activeModal}
         onClose={() => setActiveModal(null)}
       />
+
+      {/* Floating AI Assistant Advisor */}
+      <AiAdvisorDrawer />
 
     </div>
   );
